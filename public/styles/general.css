@@ -33,48 +33,7 @@ h4 {
 
 p {
   font-size: 12px;
-}
-
-/* INPUTS */
-.input-container {
-  background-color: var(--white);
-  display: flex;
-  align-items: center;
-  max-width: 900px;
-  width: 60%;
-  margin: 0 50px;
-  height: 39px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
-  padding: 4px 10px 4px 14px;
-  border-radius: 2px;
-}
-
-.input-container input {
-  width: 60%;
-  height: 100%;
-  border: none;
-  font-size: 16px;
-  flex-grow: 1;
-}
-
-.input-container i {
-  margin: 0 4px 0 18px;
-  position: relative;
-}
-
-.input-container i::after {
-  content: "";
-  position: absolute;
-  background-color: var(--gray-100);
-  width: 1px;
-  height: 20px;
-  top: -2px;
-  left: -10px;
-  bottom: 0;
-}
-
-.input-container input:focus {
-  outline: none;
+  line-height: 15px;
 }
 
 /* HEADER */
@@ -133,6 +92,49 @@ header {
   opacity: 0.7;
 }
 
+/* INPUTS */
+.input-container {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  width: 60%;
+  margin: 0 50px;
+  height: 39px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+  padding: 4px 10px 4px 14px;
+  border-radius: 2px;
+}
+
+.input-container input {
+  width: 60%;
+  height: 100%;
+  border: none;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+.input-container i {
+  margin: 0 4px 0 18px;
+  position: relative;
+  cursor:pointer;
+}
+
+.input-container i::after {
+  content: "";
+  position: absolute;
+  background-color: var(--gray-100);
+  width: 1px;
+  height: 20px;
+  top: -2px;
+  left: -10px;
+  bottom: 0;
+}
+
+.input-container input:focus {
+  outline: none;
+}
+
 /* MAIN */
 
 main {
@@ -148,7 +150,7 @@ main {
 }
 
 .ultima-visita-section {
-  padding-top: 30px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
 }
@@ -172,6 +174,7 @@ main {
   background-color: var(--white);
   transition: all 400ms ease-in-out;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .product-card:hover {
@@ -236,21 +239,35 @@ footer {
   flex-direction: column;
   width: 100%;
   align-items: center;
+  padding-top: 50px;
 }
 
 footer section {
   display: flex;
-  margin: 40px 0;
+  justify-content: space-evenly;
+
+  padding: 10px 0 40px 0;
+  height: 100%;
 }
 
-.footer-col {
+.footer__col {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 270px;
+  text-align: center;
 }
 
-.footer-col i {
+.footer__col i {
   color: var(--celeste);
   margin-bottom: 20px;
+}
+
+.footer__col h2 {
+  margin: 10px 0;
+}
+
+.footer__copyright{
+  border-top: 2px solid var(--gray-300);
+  padding-top: 14px;
 }
