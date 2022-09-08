@@ -1,4 +1,22 @@
 {
+  "name": "mercado-liebre-challenge",
+  "version": "1.0.0",
+  "description": "Clonando el front de MercadoLibre",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arsitta/mercado-liebre-challenge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arsitta/mercado-liebre-challenge/issues"
+  },
+  "homepage": "https://github.com/arsitta/mercado-liebre-challenge#readme",
   "dependencies": {
     "express": "^4.18.1"
   }
